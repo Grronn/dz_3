@@ -3,34 +3,100 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
-.avatar{
+
+.avatar {
     max-width: 300px;
     max-height: 300px;
     margin-bottom: 20px;
     border-radius: 25px;
 }
-.fio{
+
+.fio {
     font-size: 25px;
 }
-.conteiner{
+
+.conteiner {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.competeniesLists{
-    width: 100%;
-    display: flex;
+    flex-direction: row;
+    align-items: start;
+    /* place-items: center; */
+
+    min-height: 100vh;
     justify-content: space-around;
 }
-.item{
+
+.competeniesLists {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
+    width: 800px;
+}
+
+.item {
     font-size: 20px;
     margin-bottom: 15px;
     border: 1px solid black;
     border-radius: 25px;
-    padding: 1px;
-}
-.list{
+    padding: 5px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100%;
+    align-self: flex-start;
+    width: 200px;
+}
+
+.formAndList {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    min-height: 100%;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.textField {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.inputField {
+    margin-bottom: 10px;
+}
+
+.form {
+    width: 200px;
+}
+
+.itemText {
+    margin-bottom: 10px;
+}
+
+.button {
+    margin-bottom: 10px;
+    width: 100px
+}
+
+.button-active {
+    margin-bottom: 10px;
+    width: 100px;
+    border-color: green;
 }
